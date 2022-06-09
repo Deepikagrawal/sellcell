@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>SHOPcELL</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+ <link rel="stylesheet" href="css/lightbox.css">
+ <script src="js/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+ <script src="js/lightbox.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="icon" href="image/logo.png"> 
+</head>
+<body>
+<script> 
+$(function(){
+  $("#header").load("header.php"); 
+ ScrollReveal().reveal('#slider-left',{
+        duration:2000,
+        origin:'left',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	 ScrollReveal().reveal('#slide-row',{
+        duration:2000,
+        origin:'right',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	 ScrollReveal().reveal('#top-container',{
+        duration:2000,
+        origin:'right',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	 ScrollReveal().reveal('.new-img',{
+        duration:2000,
+        origin:'right',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	  ScrollReveal().reveal('#hot-image',{
+        duration:2000,
+        origin:'right',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	  ScrollReveal().reveal('#brand-row img',{
+        duration:2000,
+        origin:'left',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	 ScrollReveal().reveal('#css-only-modals',{
+        duration:7000,
+        origin:'top',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+});
+</script>
+<body>
+<!--header -->
+<div id="header"></div>
+<div id="css-only-modals">
+	<input id="modal1" class="css-only-modal-check" type="checkbox" checked/>
+	<div class="css-only-modal" style="text-align:center">
+		<h2 style="font-size:60px;font-weight:bold;color:#1E90FF">WELCOME TO SHOPcELL</h2>
+				<p style="text-align:center;color:white;"><quote>“The mobile device has become our communications hub, our diary, our entertainment portal, our primary source of media consumption, our wallet and our gateway to real-time information tailored to our needs. The revolution is now!”</quote></p>
+		<label for="modal1" class="css-only-modal-btn btn btn-primary btn-lg" >Enter site</label>
+	</div>
+<div id="screen-shade" style="background-image:url('image/back.jpg');"></div>
+</div>
+<!-- Top slider-->
+<div class="container-fluid" id="slider">
+<div class="row">
+	<div class="col-sm-8" id="slider-left">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+    <div class="item active">
+        <img src="image/slide_1.jpeg" alt="Image" style="width:100%;" class="img-responsive">
+		<div class="carousel-caption">
+        <h3 class="slider-h3">Samsung Galaxy A30</h3> 
+        <p class="slider-p">Rs 16,990</p>
+		<a href="shop.html" class="slide-button" style="text-decoration: none;">View more</a>
+    </div>
+    </div>
+      <div class="item">
+        <img src="image/slide_2.png" alt="image" style="width:100%;" class="img-responsive">
+        <div class="carousel-caption">
+        <h3 class="slider-h3">Oppo F9 Pro</h3> 
+          <p class="slider-p">Rs 19,990</p>
+		  <a href="shop.html" class="slide-button" style="text-decoration: none;">View more</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/slide_3.jpeg" alt="New York" style="width:100%;" class="img-responsive">
+        <div class="carousel-caption">
+          <h3 class="slider-h3">Iphone X</h3>
+          <p class="slider-p">Rs 84,000</p>
+		   <a href="shop.html" class="slide-button" style="text-decoration: none;">View more</a>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-4" id="slide-row">
+<div class="row">
+<div class="col" ><div class="relative" ><img src="image/iphone-slide.jpeg" class="image1">
+	<div class="absolute"><a href="#" class="slide-button" style="text-decoration: none;">View more</a></div>
+	</div>
+</div>
+</div>
+<div class="row">
+		<div class="col" ><div class="relative"><img src="image/samsumg-slide.jpg" class="image1">
+		<div class="absolute"><a href="#" class="slide-button" style="text-decoration: none;">View more</a></div>
+		</div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Top slider ends here-->
+<div class="container-fluid" id="top-container">
+<h4><span class="new-h">New Launches</span><a href="shop.html" class="view-link" style="text-decoration:none">View all</a></h4>
+<hr class="new-hr">
+<div class="row" style="text-align:center">
+<div class="col-sm-3">
+ <a href="image/discount1.png" data-lightbox="example-1"><img class="image-responsive" id="hot-image" src="image/discount1.png" alt="image-1" /></a>
+</div>
+<div class="col-sm-3" id="hot-all">
+<p class="hot-head">HOT PRODUCT</p>
+<div class="thumbnail">
+	    <a href="image/hot_new.jpg" data-lightbox="example-1"><img class="image-responsive" id="hot-image" src="image/hot_new.jpg" alt="image-1" /></a>
+         <div class="caption">
+		<p class="hot-caption">Samsung A9</p>
+          <p>The Samsung Galaxy A9 is the world's first smartphone that features a quad camera that can capture pictures like never before. It has an amazing design with the 3D rear glass back panel that feels premium. The display will help you experience videos as vivid as you always wanted to be. Overall, it is a great flagship device one can go for.</p>
+        </div>
+      <div class="hot-add">
+	  <form method="post">
+		<button type="submit" href="#" name="add_to_wishlist" id="hot-link" formaction="wish.php?pid=8">Add to Wishlist</button>
+		</form>
+	  </div>
+</div>
+</div>
+<div class="col-sm-3">
+		<div class="row" style="text-align:left">
+		<div class="new-list">
+		<figure class="new-img"><a href="#"> <a href="image/vivo-2.jpeg" data-lightbox="example-1"><img class="new-img"  src="image/vivo-2.jpeg" alt="image-1" /></a></figure>
+		<p class="new-head">Vivo V11</p>
+		<p class="new-p">Price:19,990</p>
+		<form method="post">
+		<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=11"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=11"></button>
+		</form>
+	</div>
+	</div>
+	<hr>
+	<div class="row" style="text-align:left">
+			<figure class="new-img"><a href="#"><img src="image/new_1.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Oppo K1</p>
+			<p>Price:Rs 16,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=4"></button>
+			<button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=4"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+	<div class="row" style="text-align:left">
+		<figure class="new-img"><a href="#"><img src="image/new_honor.jpeg" class="new-img"></a></figure>
+		<div class="new-list">
+		<p class="new-head">Honor 10 Lite</p>
+		<p>Price:Rs 13,999</p>
+		<form method="post">
+		<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=5"></button>
+	 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=5"></button>
+			</form>
+	</div>
+	</div>
+	<hr>
+	<div class="row" style="text-align:left">
+		<figure class="new-img"><a href="#"><img src="image/new_asus.jpeg" class="new-img"></a></figure>
+		<div class="new-list">
+		<p class="new-head">Asus ZenFone Max</p>
+		<p>Price:Rs 13,999</p>
+		<form method="post">
+		<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=6"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=6"></button>
+		</form>
+	</div>
+	</div>
+</div>
+<div class="col-sm-3" style="text-align:left">
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/redmi.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Redmi Note 6 Pro</p>
+			<p>Price:Rs 13,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=7"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=7"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/new_lenovo.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Lenovo A5</p>
+			<p>Price:Rs 5,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=9"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=9"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/asus.jpeg" class="new-img"></a></figure>
+			<p class="new-head">Asus ZenFone Lite L1</p>
+			<div class="new-list">
+			<p>Price:Rs 4,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=10"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=10"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/vivo-3.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Vivo Y91</p>
+			<p>Price:Rs 10,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=12"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="top-icon" formaction="wish.php?pid=12"></button>
+			</form>
+			</div>
+		</div>
+		
+</div>
+</div>
+</div>
+<!--new launches ends here-->
+<div class="container-fluid" id="offer-img">
+<div class="row">
+ <p class="new-h" style="text-align:center">Avail any discount now</p>
+  <section class="center slider1">
+    <div>
+   <img src="image/offer_1.jpg" class="img-responsive">
+    </div>
+   <div>
+   <img src="image/offer_2.jpg" class="img-responsive">
+    </div>
+    <div>
+   <img src="image/offer_3.jpg" class="img-responsive">
+    </div>
+   <div>
+   <img src="image/offer_5.jpg" class="img-responsive">
+    </div>
+   <div>
+   <img src="image/offer_6.jpg" class="img-responsive">
+    </div>
+  </section>
+</div>
+</div>
+<!--Hand picks -->
+<div class="container-fluid" id="top-container">
+<h4><span class="new-h-bottom">Customer's Wishlist</span><a href="shop.html" class="view-link-bottom" style="text-decoration:none">View all</a></h4>
+<hr class="new-hr-bottom">
+<div class="row">
+<div class="col-sm-3">
+		<div class="row">
+		<figure class="new-img"><a href="#"><img src="image/oppo-2.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Oppo F9 Pro</p>
+			<p>Price:Rs 19,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=13"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=13"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/oppo-3.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Oppo A83</p>
+			<p>Price:Rs 13,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=14"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=14"></button>
+		</form>
+		</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/honor-2.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Honor 9N</p>
+			<p>Price:Rs 10,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=15"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=15"></button>
+			</form>
+			</div>
+			</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/honor-3.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Honor 7A</p>
+			<p>Price:Rs 7,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=16"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=16"></button>
+			</form>
+			</div>
+		</div>
+</div>
+<div class="col-sm-3">
+		<div class="row" style="text-align:center">
+			<figure class="new-img"><a href="#"><img src="image/asus-2.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Asus ZenFone 5Z</p>
+			<p>Price:Rs 28,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=17"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=17"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/lenovo-3.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Lenovo K9</p>
+			<p>Price:Rs 8,999</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=18"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=18"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/lenovo-2.jpeg" class="new-img"></a></figure>
+			<p class="new-head">Lenovo K8 Note</p>
+			<div class="new-list">
+			<p>Price:Rs 8,499</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=19"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=19"></button>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<figure class="new-img"><a href="#"><img src="image/samsung-2.jpeg" class="new-img"></a></figure>
+			<div class="new-list">
+			<p class="new-head">Samsung Galaxy J8</p>
+			<p>Price:Rs 15,990</p>
+			<form method="post">
+			<button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="hand-icon" formaction="add_to_cart.php?pid=20"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=20"></button>
+			</form>
+			</div>
+		</div>
+</div>
+<div class="col-sm-3" id="hand-all">
+ <p class="hand-head">HOT PRODUCT</p>
+<div class="thumbnail">
+	    <a href="#">
+        <img src="image/hot_new_2.jpg" alt="image" class="hand-img">
+		</a>
+        <div class="caption">
+		<p class="hand-caption">Redmi Note 5 pro</p>
+          <p>The Redmi Note 5 Pro is one of the premium smartphones that excel in almost every department. It is equipped with a wide range of strong features. The configuration is powerful to ensure a lag-free performance. The cameras are excellent and assist in capturing excellent images. Moreover, a massive storage make the device a delightful option in this price range.</p>
+        </div>
+      <div class="hand-add">
+	  <form method="post">
+		 <button type="submit" href="#" name="add_to_wishlist" id="hand-link" formaction="wish.php?pid=22">Add to Wishlist</button>
+			</form>
+	  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<img src="image/discount2.png">
+</div>
+</div>
+</div>
+<!--hand picks ends here-->
+<div class="container-fluid" id="home-newsletter" style="background-image:url('image/cart1.png');">
+<div class="row">
+<div class="col-sm-12">
+	<div class="single">
+		<h2>Subscribe to our Newsletter</h2>
+	<div class="input-group">
+         <input type="email" class="form-control" placeholder="Enter your email">
+         <span class="input-group-btn">
+         <button class="btn btn-theme" type="submit">Subscribe</button>
+         </span>
+          </div>
+	</div>
+</div>
+</div>
+</div>
+<!--search by brand -->
+<div class="container" id="brand">
+		<div class="row" id="brand-row">
+			<div class="col-sm-3"><a href="shop-brand.php?company=honor"><img src="image/honor.png"></a></div>
+			<div class="col-sm-3"><a href="shop-brand.php?company=apple"><img src="image/iphone.png"></a></div>
+			<div class="col-sm-3"><a href="shop-brand.php?company=xiomi"><img src="image/mi.png"></a></div>
+			<div class="col-sm-3"><a href="shop-brand.php?company=asus"><img src="image/asus.png"></a></div>
+	</div>
+<div class="row" id="brand-row">
+			<div class="col-sm-3"><a href="shop-brand.php?company=oppo"><img src="image/oppo.png"></div></a>
+			<div class="col-sm-3"><a href="shop-brand.php?company=lenovo"><img src="image/lenovo.png"></div></a>
+			<div class="col-sm-3"><a href="shop-brand.php?company=samsung"><img src="image/samsung.png"></div></a>
+			<div class="col-sm-3"><a href="shop-brand.php?company=vivo"><img src="image/vivo.png"></div></a>
+	</div>
+
+</div>
+<!--search by brand ends here -->
+
+<!--footer -->
+
+
+<div class="container-fluid" id="data"> 
+<div class="row" id="foot-row">
+<div class="col-sm-3" >
+		<h3 class="foot-h">ABOUT US</h3>
+		<p>We aim to offer our customers a variety of the latest phones. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support.</p>
+</div>
+<div class="col-sm-2">
+		<h3 class="foot-h">REACH US</h3>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">New Launches</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Best Seller</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Featured Product</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Sale Off</a></p>
+</div>
+<div class="col-sm-2">
+		<h3 class="foot-h">SOME LINKS</h3>
+		<p><a href="about.html" class="link-foot" style="text-decoration:none;">About Us</a></p>
+		<p><a href="contact.php"class="link-foot" style="text-decoration:none;">Contact Us</a></p>
+		<p><a href="policy.html" class="link-foot" style="text-decoration:none;">Policy</a></p>
+</div>
+<div class="col-sm-2">
+<h3 class="foot-h">FOR CUSTOMER</h3>
+		<p><a href="wish.php" class="link-foot" style="text-decoration:none;">Wishlist</a></p>
+		<p><a href="add_to_cart.php" class="link-foot" style="text-decoration:none;">Cart</a></p>
+</div>
+<div class="col-sm-3">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<h3 class="foot-h">CONTACT US</h3>		
+		<a href="#" class="link"><li class="fa fa-facebook"></li></a>
+		<a href="#" class="link"><li class="fa fa-google"></li></a>
+		<a href="#" class="link"><li class="fa fa-linkedin"></li></a>
+		<a href="#" class="link"><li class="fa fa-pinterest"></li></a>
+		<a href="#" class="link"><li class="fa fa-twitter"></li></a>
+</div>
+</div>
+</div>
+<footer class="foot">
+	<p class="foot-p">Copyright &copy 2019 Deepika Agrawal . All rights reserved </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+     
+  
+      $('.center').slick({
+  centerMode: true,
+  centerPadding: '100px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+		
+   
+    });
+</script>
+
+</body>
+</html>

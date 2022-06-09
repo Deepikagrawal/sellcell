@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHOPcELL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="icon" href="image/logo.png">
+</head>
+<body>
+<script> 
+
+$(function(){
+  $("#header").load("header.php"); 
+  
+ ScrollReveal().reveal('.header',{
+        duration:2000,
+        origin:'left',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	 ScrollReveal().reveal('#row',{
+        duration:2000,
+        origin:'right',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	  ScrollReveal().reveal('.ui-group',{
+        duration:2000,
+        origin:'left',
+        reset:true,
+        mobile:true,
+        viewFactor:0.2,
+		 distance:'100px',
+     });
+	
+	
+});
+
+
+</script>
+  
+<body>
+
+<!--header -->
+
+<div id="header"></div>
+<!--header ends here-->
+
+<div class="container-fluid" id="mid-head">
+<h2>Shop</h2>
+</div>
+
+
+
+<div class="big-demo" data-js="hero-demo" style="background-color:#F5F5F5;text-align:center;padding-top:10px">
+
+  <div class="ui-group">
+   
+    <div class="filters button-group js-radio-button-group">
+      <button class="button is-checked" data-filter="*" id="btn-filter">Show all</button>
+      <button class="button" data-filter=".vivo"  id="btn-filter">Vivo</button>
+      <button class="button" data-filter=".oppo"  id="btn-filter">Oppo</button>
+      <button class="button" data-filter=".honor"  id="btn-filter">Honor</button>
+      <button class="button" data-filter=".lenovo"  id="btn-filter">Lenovo</button>
+      <button class="button" data-filter=".asus"  id="btn-filter">Asus</button>
+      <button class="button" data-filter=".samsung"  id="btn-filter">Samsung</button>
+      <button class="button" data-filter=".redmi"  id="btn-filter">Xiaomi</button>
+      
+    </div>
+  </div>
+
+  <div class="grid">
+
+ 
+      <div class=" element-item  vivo " data-category="transition">
+	
+	
+ 	
+	  <img src="image/vivo-2.jpeg" alt="Vivo" id="shop-image">   
+	
+        <h5 class="name">Vivo V11</h5>
+        <p class="price">Price:19,990</p>
+		 <form method="post">
+		 <button type="submit" href="#"  id="desp" formaction="shop.php?pid=11"></button>
+      <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=11"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=11"></button>
+	  </form> 
+      </div>
+
+      <div class="element-item  vivo " data-category="transition">
+	   <img src="image/vivo-3.jpeg" alt="vivo" id="shop-image">
+      <h4 id="shop-head">Vivo Y91</h4>
+      <p id="shop-para">Price:10,990</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=12"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=12"></button>
+	  </form> 
+      </div>
+      
+      <div class="element-item  vivo " data-category="transition">
+	   <img src="image/vivo.jpeg" alt="vivo" id="shop-image">
+      <h4 id="shop-head">Vivo V15 Pro</h4>
+      <p id="shop-para">Price:28,990</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=3"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=13"></button>
+	  </form> 
+      </div>
+     
+      <div class=" element-item oppo " data-category="transition">
+	  
+      <img src="image/new_1.jpeg" alt="oppo" id="shop-image">
+      <h4 id="shop-head">Oppo K1</h4>
+      <p id="shop-para">Price:16,990</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=4"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=4"></button>
+	  </form> 
+      </div>
+     
+      <div class="element-item oppo" data-category="transition">
+	   <img src="image/oppo-2.jpeg" alt="oppo" id="shop-image">
+      <h4 id="shop-head">Oppo F9 Pro</h4>
+      <p id="shop-para">Price:19,990</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=13"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=13"></button>
+	  </form> 
+      </div>
+      
+      <div class="element-item  oppo" data-category="transition">
+	  <img src="image/oppo-3.jpeg" alt="oppo" id="shop-image">
+      <h4 id="shop-head">Oppo A83</h4>
+      <p id="shop-para">Price:13,990</p>
+	   <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=14"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=14"></button>
+	  </form> 
+      </div>
+     
+      <div class=" element-item  honor " data-category="transition">
+	    <img src="image/new_honor.jpeg" alt="honor" id="shop-image">
+      <h4 id="shop-head">Honor 10 Lite</h4>
+      <p id="shop-para">Price:13,999</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=5"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=5"></button>
+	  </form> 
+      </div>
+     
+      <div class="element-item honor" data-category="transition">
+	   <img src="image/honor-2.jpeg" alt="honor" id="shop-image">
+      <h4 id="shop-head">Honor 9N</h4>
+      <p id="shop-para">Price:10,499</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=15"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=15"></button>
+	  </form> 
+      </div>
+     
+      <div class="element-item honor" data-category="transition">
+	   <img src="image/honor-3.jpeg" alt="honor" id="shop-image">
+      <h4 id="shop-head">Honor 7A</h4>
+      <p id="shop-para">Price:7,999</p>
+        <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=16"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=16"></button>
+	  </form> 
+      </div>
+      
+      <div class=" element-item  asus" data-category="transition">
+	   <img src="image/new_asus.jpeg" alt="asus" id="shop-image">
+      <h4 id="shop-head">Asus ZenFone </h4>
+      <p id="shop-para">Price:13,999</p>
+	  <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=6"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=6"></button>
+	  </form>
+       
+      </div>
+     
+      <div class="element-item asus " data-category="transition">
+	    <img src="image/asus.jpeg" alt="asus" id="shop-image">
+      <h4 id="shop-head">Asus ZenFone Lite</h4>
+      <p id="shop-para">Price:4,999</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=10"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=10"></button>
+	  </form>
+      </div>
+     
+      <div class="element-item  asus" data-category="transition">
+	   <img src="image/asus-2.jpeg" alt="asus" id="shop-image">
+      <h4 id="shop-head">Asus ZenFone 5Z</h4>
+      <p id="shop-para">Price:28,999</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=17"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=17"></button>
+	  </form>
+       
+      </div>
+     
+      <div class=" element-item lenovo" data-category="transition">
+	  <img src="image/new_lenovo.jpeg" alt="Lenovo" id="shop-image">
+      <h4 id="shop-head">Lenovo A5</h4>
+      <p id="shop-para">Price:5,999</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=9"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=9"></button>
+	  </form>
+       
+      </div>
+      
+      <div class="element-item lenovo " data-category="transition">
+	   <img src="image/lenovo-3.jpeg" alt="Lenovo" id="shop-image">
+      <h4 id="shop-head">Lenovo K9 </h4>
+      <p id="shop-para">Price:8,999</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=18"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=18"></button>
+	  </form>
+      </div>
+     
+      <div class="element-item  lenovo" data-category="transition">
+	  <img src="image/lenovo-2.jpeg" alt="Lenovo" id="shop-image">
+      <h4 id="shop-head">Lenovo K8 Note</h4>
+      <p id="shop-para">Price:8,499</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=19"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=19"></button>
+	  </form>
+       
+      </div>
+     
+      <div class=" element-item samsung" data-category="transition">
+	    <img src="image/new_samsung.jpeg" alt="samsung" id="shop-image">
+      <h4 id="shop-head">Samsung Galaxy A9</h4>
+      <p id="shop-para">Price:30,990</p>
+	  <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=8"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=8"></button>
+	  </form>
+       
+      </div>
+     
+      <div class="element-item samsung " data-category="transition">
+	   <img src="image/samsung-2.jpeg" alt="samsung" id="shop-image">
+      <h4 id="shop-head">Samsung Galaxy J8</h4>
+      <p id="shop-para">Price:15,990</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=20"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=20"></button>
+	  </form>
+      </div>
+     
+      <div class="element-item samsung" data-category="transition">
+	   <img src="image/samsung-3.jpeg" alt="samsung" id="shop-image">
+      <h4 id="shop-head">Samsung Galaxy On Nxt</h4>
+      <p id="shop-para">Price:10,490</p>
+	  <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=21"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=21"></button>
+	  </form>
+       
+      </div>
+      
+      <div class=" element-item redmi" data-category="transition">
+	   <img src="image/redmi.jpeg" alt="xiaomi" id="shop-image">
+      <h4 id="shop-head">Redmi Note 6 Pro</h4>
+      <p id="shop-para">Price:13,999</p>
+	 <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=7"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=7"></button>
+	  </form>
+       
+      </div>
+     
+      <div class="element-item redmi" data-category="transition">
+	      <img src="image/redmi-3.jpeg" alt="xiaomi" id="shop-image">
+      <h4 id="shop-head">Redmi Note 5 Pro</h4>
+      <p id="shop-para">Price:11,999</p>
+	  <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=22"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=22"></button>
+	  </form>
+      </div>
+     
+      <div class="element-item  redmi" data-category="transition">
+	   <img src="image/redmi-2.jpeg" alt="xiaomi" id="shop-image">
+      <h4 id="shop-head">Redmi Y2</h4>
+      <p id="shop-para">Price:7,999</p>
+	  <form method="post">
+	  	  <button type="submit" href="#" class="glyphicon glyphicon-shopping-cart" name="add_to_cart" id="top-icon" formaction="add_to_cart.php?pid=23"></button>
+		 <button type="submit" href="#" class="glyphicon glyphicon-heart" name="add_to_wishlist" id="hand-icon" formaction="wish.php?pid=23"></button>
+	  </form>
+       
+      </div>
+      </div>
+     
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+  <script src="js/isotope-docs.min.js?6"></script>
+
+
+ 
+
+ 
+<!--footer -->
+
+
+
+<div class="container-fluid" id="data"> 
+<div class="row" id="foot-row">
+<div class="col-sm-3" >
+		<h3 class="foot-h">ABOUT US</h3>
+		<p>We aim to offer our customers a variety of the latest phones. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support.</p>
+</div>
+<div class="col-sm-2">
+		<h3 class="foot-h">REACH US</h3>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">New Launches</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Best Seller</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Featured Product</a></p>
+		<p><a href="shop.html" class="link-foot" style="text-decoration:none;">Sale Off</a></p>
+</div>
+<div class="col-sm-2">
+		<h3 class="foot-h">SOME LINKS</h3>
+		<p><a href="about.html" class="link-foot" style="text-decoration:none;">About Us</a></p>
+		<p><a href="contact.php"class="link-foot" style="text-decoration:none;">Contact Us</a></p>
+		<p><a href="policy.html" class="link-foot" style="text-decoration:none;">Policy</a></p>
+</div>
+<div class="col-sm-2">
+<h3 class="foot-h">FOR CUSTOMER</h3>
+		<p><a href="wish.php" class="link-foot" style="text-decoration:none;">Wishlist</a></p>
+		<p><a href="add_to_cart.php" class="link-foot" style="text-decoration:none;">Cart</a></p>
+</div>
+<div class="col-sm-3">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<h3 class="foot-h">CONTACT US</h3>		
+		<a href="#" class="link"><li class="fa fa-facebook"></li></a>
+		<a href="#" class="link"><li class="fa fa-google"></li></a>
+		<a href="#" class="link"><li class="fa fa-linkedin"></li></a>
+		<a href="#" class="link"><li class="fa fa-pinterest"></li></a>
+		<a href="#" class="link"><li class="fa fa-twitter"></li></a>
+</div>
+</div>
+</div>
+<footer class="foot">
+	<p class="foot-p">Copyright &copy 2019 Deepika Agrawal . All rights reserved </p>
+</footer>
+</body>
+</html>
+
+
+<footer class="foot">
+	<p class="foot-p">Copyright &copy 2019 Deepika Agrawal . All rights reserved </p>
+</footer>
+</body>
+</html>
